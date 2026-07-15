@@ -1,0 +1,2 @@
+# Core is standard-library only.
+python-dotenv>=1.0    # optional: load a local .env for the CLI

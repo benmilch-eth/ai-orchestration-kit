@@ -1,0 +1,11 @@
+# Reference config for a background deployment (systemd timer / cron calling the CLI).
+store: ./substrate
+watch:
+  max_age_hours: 8
+execute:
+  allow:
+    - ./inbox
+    - ./tasks.md
+  audit: ./audit.jsonl
+  max_actions: 5
+  apply: false        # keep false until you trust the triage on your data
