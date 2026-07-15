@@ -1,9 +1,12 @@
 # ai-orchestration-kit
 
 A small framework for **orchestrating an always-on AI agent from ephemeral sessions** — using a
-shared **substrate** (a folder / Drive / bucket) as the message bus. Drop a handoff from anywhere
+shared **substrate** (a folder / Drive / bucket) as the message bus. Think of it as a **mail room**: senders drop messages, workers pick them up, and nobody calls anyone directly. Drop a handoff from anywhere
 (your phone, a chat), and a background watcher classifies it; a separate executor auto-runs only the
 items proven safe, inside a hard boundary. Standard library only.
+
+
+![Architecture: substrate handoff bus](docs/architecture.png)
 
 ## The idea
 
